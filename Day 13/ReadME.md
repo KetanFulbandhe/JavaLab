@@ -61,6 +61,7 @@ Write a **lambda expression and invoke product method**.
 
 8)Define a thread which displays 1 to 10 values. 
 	*Use lambda to pass Runnable implementation* to Thread class constructor.
+	
 9)Given
 
     interface MyInterface
