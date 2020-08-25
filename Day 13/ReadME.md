@@ -1,51 +1,80 @@
-**1)** define a class "Order" with
 
-	enum Type
-	{
-	  BUY,SELL;
- 	}
-  	private int quantity;
-   	private double price;
-    private Type type;
- 
- define setter and getter methods for all the fields. *create 5 objects of this class and stored them inside list. **using stream api:***
- 
- 1) count how many orders are for "SELL"
-   hint:- use "filter" method of stream to check whether type is SELL and "count" method to count.
+1)Define an interface “First” with 
+	One abstract method and one default method.
+Now define a class “Sub”, which implements “First”.
+From main function, create an instance of Sub and invoke both the methods of interface.
 
- 2) calculate sum of all the prices  hint:- use "mapToDouble" method of stream to convert price of each and every object and "sum" method to calculate total of all the prices.
- 
- 3) calculate sum of all the quantities.  hint:- use "mapToInt" method of stream to convert qty of each and every object and "sum" method to calculate total of all the quantities.
--------------------------
-**2)** define a class Student
+2)Define two interfaces
+        Interface A with “default void fun()” and interface B with “default void fun()” methods.
+Now define a class C which implements both A and B.
+Observe what happens here. Provide the solution in case of any problem.
 
-	rollno 
-	name 
-	age 
-	marks 
-  
-  parameterized constructor  getter methods *create 5 objects and store them inside list.* using **java8 stream api:**
-   1) find out **name starts** with *'s'*  
-   hint:- use **"filter"** to check names start with "s" and **"forEach" method** to display all those names.
- 
- 2) how many **students got more than 70** 
-  hint: use **"filter" and "count"** 
+3)Define an interface “Second” with 
+	One abstract method and one default method.
+Now define a class “Sub1”, which implements “Second” and override the default method of interface “Second”. Also invoke default method of Second from the overriding method.
+From main function, create an instance of Sub1 and invoke the methods.
 
- 3) how many **students in between age 22 and 25**  
- hint: use **"filter" and "count"**
--------------------------
-**3)** define a class Player  with
+4)Define a class “Base” with  “public void disp()” and interface “MyInterface” with default method “public void disp()”.
+Now define a child class “Sub2 extends Base implements MyInterface”
+Inside main function create an instance of “Sub2” and invoke “disp()”.
+Observe what happens.
 
-  	int playerid  
-  	String name
-	int runs  
-	String countryname  
+5)Define an interface “MyAlgo” with static methods
 
-define   parameterized constructor and getter methods *create 10 players and store them inside a list. using java8 stream api*: 
-1) display all the players representing **"India"**.
+    static int sqr(int k)
+    Static int add(int a,int b)
+    Static int product(int a,int b)
 
-	 hint:- use **"filter"** to *check players representing * **"India"** and **"forEach"** method in order to *print them.*
+From main function invoke all the static methods of “MyAlgo”.
 
-2) find out how many ***players** have **scored more than 5000** runs*. 
+6)Given
 
-	hint:- use **"filter"** to check players scored more than 5000 runs and **"count"** method to count them.
+    interface Alpha
+    {
+    	void perform();
+    }
+
+And
+
+    Public class Demo
+    {
+    	Public static void main(String args[])
+    	{
+    		Alpha a=MyClass.getAlpha();
+	    	a.perform();
+	    }
+    }
+
+Above code is incomplete. You have to complete it. It means you have to write “MyClass”.
+Complete the entire code, compile and run.
+
+
+
+7)Given
+
+    interface Base
+    {
+    	int product(int a,int b);
+    }
+
+Write a **lambda expression and invoke product method**.
+
+8)Define a thread which displays 1 to 10 values. 
+	*Use lambda to pass Runnable implementation* to Thread class constructor.
+9)Given
+
+    interface MyInterface
+    {
+    	void fun(char a,int b);
+    }
+And
+
+    class SomeClass
+    {
+	    void disp(char a,int b)
+	    {
+	    	S.o.p(a,b);
+	    }
+    }
+
+Write a lambda expression as well as method reference and invoke disp() method of SomeClass.
