@@ -1,0 +1,1 @@
+<%  out.println(session.getAttribute("Mygrp1")); %> 
