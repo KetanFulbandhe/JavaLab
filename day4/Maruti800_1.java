@@ -16,10 +16,10 @@ public class Maruti800_1 extends Maruti
 {
 	public Maruti800()
 	{
-	     System.out.println("sub-2 class Maruti800 def. constructor");
+	     System.out.println("sub-2 class Maruti800_1 def. constructor");
 	}
 	public static void main(String args[])
 	{
-	     Maruti800 obj = new Maruti800();
+	     Maruti800_1 obj = new Maruti800_1();
 	}
 }
