@@ -13,6 +13,3 @@ if LoginBean returns "true" LoginServ will store "Loginname" inside request attr
 
 if LoginBean returns "false" , LoginServ will forward the request to 
 "Fail.jsp" which will have a message "Sorry Login failed, please retry" and a link for "Login.jsp".
-
-
-
