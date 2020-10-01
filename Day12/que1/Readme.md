@@ -23,6 +23,3 @@ servlet will get List which contains all the objects ( HQL )
 store it inside request attribute and then forward request to "View.jsp".
 View.jsp will display all the objects using jstl and el.
 also in "View.jsp", there should be a link "go home" on click of which control should go back to "Home.jsp"
-
-
-
