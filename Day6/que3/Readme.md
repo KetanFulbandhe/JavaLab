@@ -14,3 +14,4 @@ now create "Student.jsp"
 	on submit control should go to "StudentServ".
 
 		"StudentServ" will get the request parameters and add a record in database.
+		
